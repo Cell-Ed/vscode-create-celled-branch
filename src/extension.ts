@@ -44,7 +44,7 @@ export function activate(context: vscode.ExtensionContext) {
 				if(description !== undefined) {
 					description = description && description.replace(/ /g,"-");
 					
-					let branchName = sanitize(`${fob}/WEBAPP-${ticketN}-${initials}-${description}`);
+					let branchName = sanitize(`${fob}/CET-${ticketN}-${initials}-${description}`);
 
 					const gitPath = await api.getGitPath();
 					let log = '';
